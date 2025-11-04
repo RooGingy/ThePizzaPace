@@ -24,72 +24,134 @@ body {
 /** Navigation Bar Styles **/
 .NavBar {
     display: flex;
-    width: 100%;
-    height: 80px;
-    background-color: #3b2f27;
-    border: 4px gray solid;
     justify-content: center;
     align-items: center;
+
+    width: 100%;
+    height: 80px;
     border-radius: 20px;
 }
 
 .NavItem {
     display: flex;
-    margin: 0 20px;
-    background-color: #d4a373;
-    height: 48px;
     align-items: center;
     justify-content: center;
+    
+    margin: 0 20px;
     padding: 0 15px;
-    border-radius: 4px;
-    width: 100px;
+
+    height: 48px;
+    min-width: 200px;
+    border-radius: 8px;
+
+    background-color: #5f4c47;
 }
 
 .NavItem:hover {
-    background-color: #f4a261;
+    background-color: #645a5b;
 }
 
 a {
-    color: #5d4037;
+    color: white;
     text-decoration: none;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 
 /** Hero Section Styles **/
 .Hero {
-    background-image: url('../img/BrickOven.png');
-    background-size: cover;
-    background-position: center;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+
     padding: 60px 20px;
-    border-radius: 30px;
     margin: 32px auto;
+
     max-width: 100%;
-    height: 700px;
+    height: 1200px;
+    border-radius: 30px;
+
+
+    background-image: url('../img/BrickOven.png');
+    background-size: cover;
+    background-position: center;
     border: 4px gray solid;
 }
+
 
 .Hero h1 {
     color: #d4a373;
-    ;
+    font-size: 52px;
+    letter-spacing: .1em;
 }
 
 /* Title Banner Styles **/
-.TitleBanner {
-    background-color: #3b2f27;
-    border: 4px gray solid;
-    border-radius: 20px;
-    padding: 20px;
-    margin: 32px auto;
-    max-width: 100%;
+.TittleBanner {
     text-align: center;
+
+    padding: 30px;
+    margin: 32px auto;
+
+    max-width: 2100px;
+    border-radius: 20px;
+
+    background-color: #3b2f27;
+    border: 4px solid gray;
 }
+
+
+.TittleBanner h2 {
+    margin: 0;
+
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+
+    color: white;
+}
+
+
+/** About Section Styles **/
+.AboutParagraphs {
+    display: flex;
+    flex-direction: column;
+
+    margin: 32px auto;
+    padding: 0 20px;
+    gap: 20px;
+
+    max-width: 1500px;
+}
+
+.AboutParagraphs .paragraph {
+    padding: 30px;
+    margin: 16px 0;
+    border-radius: 20px;
+
+    background-color: #5f4c47;
+    border: 4px solid gray;
+}
+
+.AboutParagraphs .paragraph p {
+    text-align: left;
+    
+    font-size: 22px;
+    line-height: 1.6;
+    
+    margin: 0;
+
+    color: white;
+}
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 500px) {
