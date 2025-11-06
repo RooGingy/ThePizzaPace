@@ -1,232 +1,338 @@
 html {
-    font-size: 16px;
-    margin: 0 auto;
-    box-sizing: border-box;
+  font-size: 16px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 body {
-    background-image: url('../img/RusticWoodBackground.png');
+  background-image: url("../img/RusticWoodBackground.png");
 }
-
 
 /** Navigation Bar Styles **/
 .NavBar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    width: 100%;
-    height: 80px;
-    border-radius: 20px;
+  width: 100%;
+  height: 80px;
+  border-radius: 20px;
 }
 
 .NavItem {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    margin: 0 20px;
-    padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    height: 48px;
-    min-width: 200px;
-    border-radius: 8px;
+  margin: 0 20px;
+  padding: 0 15px;
 
-    background-color: #5f4c47;
+  height: 48px;
+  min-width: 200px;
+  border-radius: 8px;
+
+  background-color: #5f4c47;
 }
 
 .NavItem:hover {
-    background-color: #645a5b;
+  background-color: #645a5b;
 }
 
 a {
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 24px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 24px;
 }
-
 
 /** Hero Section Styles **/
 .Hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 
-    padding: 60px 20px;
-    margin: 32px auto;
+  padding: 60px 20px;
+  margin: 32px auto;
 
-    max-width: 100%;
-    height: 1200px;
-    border-radius: 30px;
+  max-width: 100%;
+  height: 1200px;
+  border-radius: 30px;
 
-
-    background-image: url('../img/BrickOven.png');
-    background-size: cover;
-    background-position: center;
-    border: 4px gray solid;
+  background-image: url("../img/BrickOven.png");
+  background-size: cover;
+  background-position: center;
+  border: 4px #a7a29b solid;
 }
 
-
 .Hero h1 {
-    color: #d4a373;
-    font-size: 52px;
-    letter-spacing: .1em;
+  color: #d4a373;
+  font-size: 52px;
+  letter-spacing: 0.1em;
 }
 
 #Established {
-    margin-top: -20px;
-    font-size: 32px;
+  margin-top: -20px;
+  font-size: 32px;
 }
 
 /* Title Banner Styles **/
 .TittleBanner {
-    text-align: center;
+  text-align: center;
 
-    padding: 30px;
-    margin: 32px auto;
+  padding: 30px;
+  margin: 32px auto;
 
-    max-width: 2100px;
-    border-radius: 20px;
+  max-width: 2100px;
+  border-radius: 20px;
 
-    background-color: #3b2f27;
-    border: 4px solid gray;
+  background-color: #3b2f27;
+  border: 4px solid #a7a29b;
 }
-
 
 .TittleBanner h2 {
-    margin: 0;
+  margin: 0;
 
-    font-size: 32px;
-    font-weight: bold;
-    letter-spacing: 0.1em;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
 
-    color: white;
+  color: white;
 }
-
 
 /** About Section Styles **/
 .AboutParagraphs {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    margin: 32px auto;
-    padding: 0 20px;
-    border-radius: 20px;
+  margin: 32px auto;
+  padding: 0 20px;
+  border-radius: 20px;
 
-    /* gap: 15px; */
+  /* gap: 15px; */
 
-    background-color: #674f44;
-    border: 4px solid gray;
-    
-    max-width: 1500px;
+  background-color: #674f44;
+  border: 4px solid #a7a29b;
+
+  max-width: 1500px;
 }
 
 .AboutParagraphs .paragraph {
-    padding: 30px;
-    /* margin: 16px 0; */
-    /* border-radius: 20px; */
+  padding: 30px;
+  /* margin: 16px 0; */
+  /* border-radius: 20px; */
 
-    /* background-color: #5f4c47; */
-    /* border: 4px solid gray; */
+  /* background-color: #5f4c47; */
+  /* border: 4px solid gray; */
 }
 
 .AboutParagraphs .paragraph p {
-    text-align: left;
-    
-    font-size: 22px;
-    line-height: 1.6;
-    
-    margin: 0;
+  text-align: left;
 
-    color: white;
+  font-size: 22px;
+  line-height: 1.6;
+
+  margin: 0;
+
+  color: white;
 }
 
 /* Title Banner 2 Styles **/
 .TittleBanner2 {
-    text-align: center;
+  text-align: center;
 
-    padding: 30px;
-    margin: 32px auto;
+  padding: 30px;
+  margin: 32px auto;
 
-    max-width: 1500px;
-    border-radius: 20px;
+  max-width: 1500px;
+  border-radius: 20px;
 
-    background-color: #4b352b;
-    border: 4px solid gray;
+  background-color: #4b352b;
+  border: 4px solid #a7a29b;
 }
 
-
 .TittleBanner2 h2 {
-    margin: 0;
+  margin: 0;
 
-    font-size: 32px;
-    font-weight: bold;
-    letter-spacing: 0.1em;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
 
-    color: white;
+  color: white;
 }
 
 .TittleBanner2 h3 {
-    margin: 10px 0 0 0;
+  margin: 10px 0 0 0;
 
-    font-size: 20px;
-    font-weight: normal;
+  font-size: 20px;
+  font-weight: normal;
 
-    color: white;
+  color: white;
 }
 
-#pizza1 { grid-area: pizza1; }
-#pizza2 { grid-area: pizza2; }
-#pizza3 { grid-area: pizza3; }
-#pizza4 { grid-area: pizza4; }
-#pizza5 { grid-area: pizza5; }
-#pizza6 { grid-area: pizza6; }
-#pizza7 { grid-area: pizza7; }
-#pizza8 { grid-area: pizza8; }
-#pizza9 { grid-area: pizza9; }
-#pizza10 { grid-area: pizza10; }
-#pizza11 { grid-area: pizza11; }
-#pizza12 { grid-area: pizza12; }
-#pizza13 { grid-area: pizza13; }
-#pizza14 { grid-area: pizza14; }
-
-/* Grid Styles **/
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto auto auto;
-    grid-template-areas: 
-        "pizza1 pizza2 pizza3"
-        "pizza4 pizza5 pizza6"
-        "pizza7 pizza8 pizza9"
-        "pizza10 pizza11 pizza12"
-        ". pizza13 pizza14 .";
-    gap: 20px;
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
+/* Image Grid Areas **/
+#image1 {
+  grid-area: image1;
+}
+#image2 {
+  grid-area: image2;
+}
+#image3 {
+  grid-area: image3;
 }
 
+/* Food Item Grid Areas **/
+#item1 {
+  grid-area: item1;
+}
+#item2 {
+  grid-area: item2;
+}
+#item3 {
+  grid-area: item3;
+}
+#item4 {
+  grid-area: item4;
+}
+#item5 {
+  grid-area: item5;
+}
+#item6 {
+  grid-area: item6;
+}
+#item7 {
+  grid-area: item7;
+}
+#item8 {
+  grid-area: item8;
+}
+#item9 {
+  grid-area: item9;
+}
+#item10 {
+  grid-area: item10;
+}
+#item11 {
+  grid-area: item11;
+}
+#item12 {
+  grid-area: item12;
+}
+#item13 {
+  grid-area: item13;
+}
+#item14 {
+  grid-area: item14;
+}
 
+/* Pizza Grid Styles **/
+.pizza-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "item1 item2 item3"
+    "item4 item5 item6"
+    "item7 item8 item9";
+  gap: 30px;
+  max-width: 1400px;
+  margin: 40px auto;
+  padding: 20px;
+}
 
+/* Salad Grid Styles **/
+.salad-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "item1 item2 item3"
+    "item4 item5 item6"
+    "HouseDressings HouseDressings HouseDressings";
+  gap: 30px;
 
+  max-width: 1400px;
+  margin: 40px auto;
+  padding: 20px;
+}
 
+/* Food Item Card Styles **/
+.FoodItem {
+  background-color: #5f4c47;
+  border: 2px solid #d4a373;
+  border-radius: 15px;
+  padding: 30px;
+  margin: 0;
+  width: 100%;
+}
+
+.FoodItem h3 {
+  font-size: 24px;
+  color: #f4a261;
+  margin: 0 0 10px 0;
+}
+
+.FoodItem span {
+  background-color: #d4a373;
+  color: #3b2f27;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 0 0 15px 0;
+}
+
+.FoodItem p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: white;
+  margin: 0;
+}
+
+/* Dressing Item Card Styles **/
+.HouseDressings {
+  grid-area: HouseDressings;
+  background-color: #5f4c47;
+  border: 2px solid #d4a373;
+  justify-content: center;
+  text-align: center;
+  border-radius: 15px;
+  padding: 30px;
+  margin: 0;
+  width: 100%;
+}
+
+.HouseDressings h3 {
+  font-size: 28px;
+  color: #f4a261;
+  margin: 0 0 10px 0;
+}
+
+.HouseDressings p {
+  font-size: 20px;
+  line-height: 1.5;
+  color: white;
+  margin: 0;
+}
+
+/* Special styling for Vegetarian items */
+.Vegetarian {
+  margin-left: 20px;
+  background-color: #81b29a;
+}
 
 @media screen and (max-width: 500px) {
-    
-    
 }
