@@ -87,6 +87,11 @@ a {
     letter-spacing: .1em;
 }
 
+#Established {
+    margin-top: -20px;
+    font-size: 32px;
+}
+
 /* Title Banner Styles **/
 .TittleBanner {
     text-align: center;
@@ -120,18 +125,23 @@ a {
 
     margin: 32px auto;
     padding: 0 20px;
-    gap: 20px;
+    border-radius: 20px;
 
+    /* gap: 15px; */
+
+    background-color: #674f44;
+    border: 4px solid gray;
+    
     max-width: 1500px;
 }
 
 .AboutParagraphs .paragraph {
     padding: 30px;
-    margin: 16px 0;
-    border-radius: 20px;
+    /* margin: 16px 0; */
+    /* border-radius: 20px; */
 
-    background-color: #5f4c47;
-    border: 4px solid gray;
+    /* background-color: #5f4c47; */
+    /* border: 4px solid gray; */
 }
 
 .AboutParagraphs .paragraph p {
@@ -145,9 +155,71 @@ a {
     color: white;
 }
 
+/* Title Banner 2 Styles **/
+.TittleBanner2 {
+    text-align: center;
+
+    padding: 30px;
+    margin: 32px auto;
+
+    max-width: 1500px;
+    border-radius: 20px;
+
+    background-color: #4b352b;
+    border: 4px solid gray;
+}
 
 
+.TittleBanner2 h2 {
+    margin: 0;
 
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+
+    color: white;
+}
+
+.TittleBanner2 h3 {
+    margin: 10px 0 0 0;
+
+    font-size: 20px;
+    font-weight: normal;
+
+    color: white;
+}
+
+#pizza1 { grid-area: pizza1; }
+#pizza2 { grid-area: pizza2; }
+#pizza3 { grid-area: pizza3; }
+#pizza4 { grid-area: pizza4; }
+#pizza5 { grid-area: pizza5; }
+#pizza6 { grid-area: pizza6; }
+#pizza7 { grid-area: pizza7; }
+#pizza8 { grid-area: pizza8; }
+#pizza9 { grid-area: pizza9; }
+#pizza10 { grid-area: pizza10; }
+#pizza11 { grid-area: pizza11; }
+#pizza12 { grid-area: pizza12; }
+#pizza13 { grid-area: pizza13; }
+#pizza14 { grid-area: pizza14; }
+
+/* Grid Styles **/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "pizza1 pizza2 pizza3"
+        "pizza4 pizza5 pizza6"
+        "pizza7 pizza8 pizza9"
+        "pizza10 pizza11 pizza12"
+        ". pizza13 pizza14 .";
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
 
 
 
