@@ -1,0 +1,2 @@
+make hero text brighter
+
