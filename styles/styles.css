@@ -283,6 +283,23 @@ a {
     padding: 20px;
 }
 
+/* Sandwich Grid Styles **/
+.sandwich-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "item1 item2 ."
+        "item3 item4 item5" 
+        "item6 item7 item8"
+        "item9 item10 item11";
+    gap: 30px;
+
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
 /* Food Item Card Styles **/
 .FoodItem {
     background-color: #5f4c47;
@@ -319,12 +336,14 @@ a {
 
 /* Dressing Item Card Styles **/
 .HouseDressings {
-  text-align: center;
-  border-radius: 15px;
-  padding: 30px;
-  margin: 0;
     grid-area: HouseDressings;
     background-color: #5f4c47;
+    border: 2px solid #d4a373;
+    justify-content: center;
+    text-align: center;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 0;
     width: 100%;
 }
 
