@@ -133,10 +133,15 @@ a {
 }
 
 .AboutParagraphs .paragraph {
-  padding: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .AboutParagraphs .paragraph p {
+  padding-left: 200px;
+  padding-right: 200px;
+
+
   text-align: left;
 
   font-size: 22px;
@@ -510,7 +515,7 @@ a {
   border-radius: 10px;
   font-size: 16px;
   border: 1px solid #d4a373;
-  
+
 }
 
 .backToTop a:hover {
